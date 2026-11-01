@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "clearfps",
+  "version": "${version}",
+  "name": "clearfps",
+  "description": "Client utility mod for vanilla anarchy: HUD, triggerbot, invisible vision, freecam and more. Menu key: ;",
+  "authors": ["clearfps"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.clearfps.ClearFps"]
+  },
+  "mixins": [
+    { "config": "clearfps.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
